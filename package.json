@@ -1,0 +1,8 @@
+{
+  "name": "learn-webpack-react-combo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hristo2612/learn-webpack-react-combo.git",
+  "author": "hristo2612 <hristoapps@gmail.com>",
+  "license": "MIT"
+}
