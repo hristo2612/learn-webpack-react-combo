@@ -1,8 +1,10 @@
 dependencies:
   react: 16.3.2
   react-dom: 16.3.2
+  react-hot-loader: 4.1.1
   react-prop-types: 0.4.0
   react-router-dom: 4.2.2
+  semantic-ui-react: 0.79.1
 devDependencies:
   babel-core: 6.26.0
   babel-loader: 7.1.4
@@ -942,7 +944,6 @@ packages:
     dependencies:
       core-js: 2.5.5
       regenerator-runtime: 0.11.1
-    dev: true
     resolution:
       integrity: sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
   /babel-template/6.26.0:
@@ -1395,6 +1396,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-qOhPa/Fj7s6TY8H8esGu5QNpMMQxz79h+urzrNYN6mn+9BnxlDGf5QZ+XeCDsxSjPqsSR56XOZOJmpeurnLMeg==
+  /classnames/2.2.5:
+    dev: false
+    resolution:
+      integrity: sha1-+zgB1FNGdknvNgPH1hoCvRKb3m0=
   /clean-css/4.1.11:
     dependencies:
       source-map: 0.5.7
@@ -1685,7 +1690,6 @@ packages:
     resolution:
       integrity: sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY=
   /core-js/2.5.5:
-    dev: true
     resolution:
       integrity: sha1-sU3ek2xkDAV5prUMq8wTLdYSfjs=
   /core-util-is/1.0.2:
@@ -2059,6 +2063,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-BzxpdUbOB4DOI75KKOKT5AvDDII=
+  /dom-walk/0.1.1:
+    dev: false
+    resolution:
+      integrity: sha1-ZyIm3HTI95mtNTB9+TaroRrNYBg=
   /domain-browser/1.2.0:
     dev: true
     engines:
@@ -2464,6 +2472,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-1RQsDK7msRifh9OnYREGT4bIu/I=
+  /fast-levenshtein/2.0.6:
+    dev: false
+    resolution:
+      integrity: sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
   /fastparse/1.1.1:
     dev: true
     resolution:
@@ -2793,6 +2805,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-2/dDxsFJklk8ZVVoy2btMsASLr4=
+  /global/4.3.2:
+    dependencies:
+      min-document: 2.19.0
+      process: 0.5.2
+    dev: false
+    resolution:
+      integrity: sha1-52mJJopsdMOJCLEwWxD8DjlOnQ8=
   /globals/9.18.0:
     dev: true
     engines:
@@ -3941,7 +3960,6 @@ packages:
     resolution:
       integrity: sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
   /lodash/4.17.5:
-    dev: true
     resolution:
       integrity: sha512-svL3uiZf1RwhH+cWrfZn3A4+U58wbP0tGVTLQPbjplZxZ8ROD9VLuNgsRniTlLe7OlSqR79RUehXgpBW/s0IQw==
   /log-symbols/1.0.2:
@@ -4215,6 +4233,12 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-3z02Uqc/3ta5sLJBRub9BSNTRY4=
+  /min-document/2.19.0:
+    dependencies:
+      dom-walk: 0.1.1
+    dev: false
+    resolution:
+      integrity: sha1-e9KC4/WELtKVu3SM3Z8f+iyCRoU=
   /minimalistic-assert/1.0.1:
     dev: true
     resolution:
@@ -5221,6 +5245,12 @@ packages:
       node: '>= 0.6.0'
     resolution:
       integrity: sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
+  /process/0.5.2:
+    dev: false
+    engines:
+      node: '>= 0.6.0'
+    resolution:
+      integrity: sha1-FjjYqONML0QKkduVq5rrZ3/Bhc8=
   /promise-inflight/1.0.1:
     dev: true
     resolution:
@@ -5397,6 +5427,25 @@ packages:
       react: ^16.0.0
     resolution:
       integrity: sha512-MMPko3zYncNrz/7gG17wJWUREZDvskZHXOwbttzl0F0L3wDmToyuETuo/r8Y5yvDejwYcRyWI1lvVBjLJWFwKA==
+  /react-hot-loader/4.1.1:
+    dependencies:
+      fast-levenshtein: 2.0.6
+      global: 4.3.2
+      hoist-non-react-statics: 2.5.0
+      prop-types: 15.6.1
+      react-lifecycles-compat: 2.0.2
+      shallowequal: 1.0.2
+    dev: false
+    engines:
+      node: '>= 6'
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0
+    resolution:
+      integrity: sha512-bwDWesjqXABplFfqNOC6imbmW9y1JtT5RAo+hdIJ4OW2FsU48nrVzFiG8z9a+eB3Xd0C+KzFwD8aq31M+6SYKQ==
+  /react-lifecycles-compat/2.0.2:
+    dev: false
+    resolution:
+      integrity: sha512-BPksUj7VMAAFhcCw79sZA0Ow/LTAEjs3Sio1AQcuwLeOP+ua0f/08Su2wyiW+JjDDH6fRqNy3h5CLXh21u1mVg==
   /react-prop-types/0.4.0:
     dependencies:
       warning: 3.0.0
@@ -5581,7 +5630,6 @@ packages:
     resolution:
       integrity: sha512-jVpo1GadrDAK59t/0jRx5VxYWQEDkkEKi6+HjE3joFVLfDOh9Xrdh0dF1eSq+BI/SwvTQ44gSscJ8N5zYL61sg==
   /regenerator-runtime/0.11.1:
-    dev: true
     resolution:
       integrity: sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
   /regenerator-transform/0.10.1:
@@ -5861,6 +5909,19 @@ packages:
     dev: true
     resolution:
       integrity: sha1-tESVgNmZKbZbEKSDiTAaZZIIh1g=
+  /semantic-ui-react/0.79.1:
+    dependencies:
+      babel-runtime: 6.26.0
+      classnames: 2.2.5
+      fbjs: 0.8.16
+      lodash: 4.17.5
+      prop-types: 15.6.1
+    dev: false
+    peerDependencies:
+      react: '>=0.14.0 <= 16'
+      react-dom: '>=0.14.0 <= 16'
+    resolution:
+      integrity: sha512-Z/QHE/h+l4MrZMilKe7RCBv6wPSBopcwRh5fPPZ1Cavxw4703XizJ3m+g7qcYXa5F40NnM0LKaVDuaReJ0f/3w==
   /semver/5.5.0:
     dev: true
     resolution:
@@ -5964,6 +6025,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-QMEp5B7cftE7APOjk5Y6xgrbWu+WkLVQwk8JNjZ8nKRciZaByEW6MubieAiToS7+dwvrjGhH8jRXz3MVd0AYqQ==
+  /shallowequal/1.0.2:
+    dev: false
+    resolution:
+      integrity: sha512-zlVXeVUKvo+HEv1e2KQF/csyeMKx2oHvatQ9l6XjCUj3agvC8XGf6R9HvIPDSmp8FNPvx7b5kaEJTRi7CqxtEw==
   /shebang-command/1.2.0:
     dependencies:
       shebang-regex: 1.0.0
@@ -7146,8 +7211,10 @@ specifiers:
   html-webpack-plugin: ^3.2.0
   react: ^16.3.2
   react-dom: ^16.3.2
+  react-hot-loader: ^4.1.1
   react-prop-types: ^0.4.0
   react-router-dom: ^4.2.2
+  semantic-ui-react: ^0.79.1
   style-loader: ^0.20.3
   webpack: ^4.6.0
   webpack-cli: ^2.0.14
