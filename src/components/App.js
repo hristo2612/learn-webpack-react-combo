@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
+import { hot } from 'react-hot-loader';
 
 import Home from './Home';
 import DynamicPage from './DynamicPage';
@@ -19,4 +20,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default hot(module)(App);
