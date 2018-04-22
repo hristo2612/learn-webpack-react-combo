@@ -2,11 +2,15 @@
   "name": "learn-webpack-react-combo",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://hristo2612.github.io/learn-webpack-react-combo/",
   "repository": "https://github.com/hristo2612/learn-webpack-react-combo.git",
   "author": "hristo2612 <hristoapps@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --hot"
+    "start": "webpack-dev-server --hot",
+    "predeploy": "webpack",
+    "deploy": "gh-pages -d build",
+    "full-deploy": "npm run predeploy && npm run deploy"
   },
   "dependencies": {
     "gh-pages": "^1.1.0",

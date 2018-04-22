@@ -8,6 +8,7 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   output: {
+    path: __dirname + "/build",
     filename: 'bundle.[hash].js'
   },
   devtool: 'inline-source-map',
