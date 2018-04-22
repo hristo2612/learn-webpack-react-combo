@@ -1,12 +1,12 @@
-const webpack = rquire('webpack')
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const port = process.env.PORT || 3000;
 
 module.exports = {
   // Webpack configuration goes here..
-  module: 'development',
-  entry: '/src/index.js',
+  mode: 'development',
+  entry: './src/index.js',
   output: {
     filename: 'bundle.[hash].js'
   },
