@@ -6,7 +6,10 @@ const port = process.env.PORT || 3000;
 module.exports = {
   // Webpack configuration goes here..
   mode: 'development',
-  entry: './src/index.js',
+  entry: {
+    vendor: ['semantic-ui-react'],
+    app: './src/index.js'
+  },
   output: {
     path: __dirname + "/build",
     filename: '[name].[hash].js'
@@ -50,5 +53,17 @@ module.exports = {
     port: port,
     historyApiFallback: true,
     open: true
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          chunks: 'initial',
+          test: 'vendor',
+          name: 'vendor',
+          enforce: true
+        }
+      }
+    }
   }
 }
