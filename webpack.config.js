@@ -9,7 +9,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: __dirname + "/build",
-    filename: 'bundle.[hash].js'
+    filename: '[name].[hash].js'
   },
   devtool: 'inline-source-map',
   module: {
