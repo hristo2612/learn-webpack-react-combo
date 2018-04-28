@@ -8,8 +8,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --env.env=dev --hot",
+    "dev:bundleanalyzer": "yarn dev --env.addons=bundleanalyzer",
     "prebuild": "rimraf build",
     "build": "cross-env NODE_ENV=production webpack -p --env.env=prod",
+    "build:bundleanalyzer": "yarn build --env.addons=bundleanalyzer",
     "predeploy": "npm run prebuild && npm run build",
     "deploy": "gh-pages -d build",
     "full-deploy": "npm run predeploy && npm run deploy"
